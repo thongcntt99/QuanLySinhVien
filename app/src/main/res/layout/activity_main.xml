@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_shadow_start_color"
+        app:menu="@menu/context_menu2"
+        app:title="Thêm sinh viên" />
+
+    <EditText
+        android:id="@+id/edt_mssv"
+        android:hint="MSSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edt_fullname"
+        android:hint="Họ và tên"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_mssv"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_fullname"/>
+    <EditText
+        android:id="@+id/edt_dob"
+        android:hint="Ngày Sinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"/>
+    <EditText
+        android:id="@+id/edt_birthplace"
+        android:hint="Nơi Sinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_dob"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:text="Thêm Sinh Viên"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_birthplace"
+        />
+    <Button
+        android:id="@+id/btn_displayListSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xem danh sách Sinh Viên"
+        android:layout_below="@id/edt_birthplace"
+        android:layout_toRightOf="@id/btn_add"/>
+
+</RelativeLayout>

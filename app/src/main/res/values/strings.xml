@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework4_6_2</string>
+    <string-array name="Select">
+        <item>Update</item>
+        <item>Delete</item>
+    </string-array>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+</resources>
